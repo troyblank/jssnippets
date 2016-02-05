@@ -10,6 +10,7 @@ module.exports = function (config) {
 
         files: [
             'frontend/troyblank/troyblank.js',
+            'frontend/troyblank/util/stringTester.js',
             'frontend/troyblank/**/*.js',
 
             'frontend/test/helpers/helpers.js',

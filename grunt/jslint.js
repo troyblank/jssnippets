@@ -3,6 +3,7 @@ module.exports = {
         src: ['frontend/troyblank/**/*.js'],
         directives: {
             browser: true,
+            regexp: true,
             predef: ['troyblank']
         }
     },
