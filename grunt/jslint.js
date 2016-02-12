@@ -4,7 +4,8 @@ module.exports = {
         directives: {
             browser: true,
             regexp: true,
-            predef: ['troyblank']
+            predef: ['troyblank',
+                     'ga']
         }
     },
     frontend_test: {
