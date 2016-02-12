@@ -7,9 +7,7 @@
 
     function addEventListeners() {
         // refactor into dom util
-        [].forEach.call(document.querySelectorAll('.js-track-link'), function (el) {
-            el.addEventListener('click', troyblank.util.googleAnalytics.trackLink);
-        });
+        troyblank.util.dom.on('.js-track-link', 'click', troyblank.util.googleAnalytics.trackLink);
     }
 
     troyblank.namespace('util.googleAnalytics', {
