@@ -25,11 +25,11 @@ describe('self', function () {
     'use strict';
 
     beforeEach(function () {
-        document.getElementsByTagName('html')[0].innerHTML = '<a id="test-button">Click me</a>';
+        helpers.dom.addHTML('<a id="test-button">Click me</a>');
     });
 
     afterEach(function () {
-        document.getElementsByTagName('html')[0].innerHTML = '';
+        helpers.dom.removeHTML();
     });
 
     it('should be able to use chai assert', function () {

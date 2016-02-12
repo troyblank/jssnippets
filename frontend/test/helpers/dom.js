@@ -5,7 +5,7 @@
         addHTML: function (str) {
             var html = document.createElement('div');
             html.innerHTML = str;
-            document.body.appendChild(html.firstChild);
+            document.body.appendChild(html);
         },
 
         removeHTML: function () {
