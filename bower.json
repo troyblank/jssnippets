@@ -1,0 +1,8 @@
+{
+  "name": "jssnippets",
+  "version": "0.0.1",
+  "description": "Dev dependencies for jssnippets.",
+  "devDependencies": {
+    "jquery": "1.11.3"
+  }
+}

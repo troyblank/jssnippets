@@ -9,6 +9,8 @@ module.exports = function (config) {
         ],
 
         files: [
+            'bower_components/jquery/dist/jquery.js',
+
             'frontend/troyblank/troyblank.js',
             'frontend/troyblank/util/stringTester.js',
             'frontend/troyblank/**/*.js',
