@@ -42,6 +42,16 @@ describe('self', function () {
         selfTest.callback();
 
         assert.equal(callback.called, true);
+        selfTest.callback.restore();
+    });
+
+    it('should be able to use sinon stubs', function () {
+        sinon.stub(selfTest, 'callback', function() {
+            return false
+        });
+
+        assert.equal(selfTest.callback(), false);
+        selfTest.callback.restore();
     });
 
     it('should allow DOM interaction with phantomjs', function () {
