@@ -17,8 +17,8 @@ module.exports = {
                      '$']
         }
     },
-    frontend_test_util: {
-        src: ['frontend/test/util/*.js'],
+    frontend_test: {
+        src: ['frontend/test/*.js', '!frontend/test/control/*.js'],
         directives: {
             browser: true,
             predef: ['afterEach',

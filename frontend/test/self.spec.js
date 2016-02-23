@@ -46,8 +46,8 @@ describe('self', function () {
     });
 
     it('should be able to use sinon stubs', function () {
-        sinon.stub(selfTest, 'callback', function() {
-            return false
+        sinon.stub(selfTest, 'callback', function () {
+            return false;
         });
 
         assert.equal(selfTest.callback(), false);
