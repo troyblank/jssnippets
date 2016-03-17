@@ -1,7 +1,7 @@
 (function (troyblank) {
     'use strict';
 
-    troyblank.namespace('styletiles.util.math', {
+    troyblank.namespace('util.math', {
         randomFromRange: function (startPoint, endPoint) {
             return (Math.random() * (endPoint - startPoint)) + startPoint;
         }
