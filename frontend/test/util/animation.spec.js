@@ -7,7 +7,7 @@ describe('util - Animation', function () {
         {x: 528, y: 471},
         {x: 408, y: 590},
         {x: 98, y: 590}
-    ]
+    ];
 
     it('should be able get the distance of a vertice', function () {
         var dist = troyblank.util.animation.getVerticeDist({x: 0, y: 300}, {x: 234, y: 567});

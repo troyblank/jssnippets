@@ -13,13 +13,13 @@ describe('util - Canvas', function () {
     it('should be able to get a 2D context', function () {
         var context = troyblank.util.canvas.get2DContext('someCanvas');
 
-        assert.equal(context.canvas != undefined, true);
+        assert.notEqual(context.canvas, undefined);
     });
 
     it('should be able to clear a canvas', function () {
         var context = troyblank.util.canvas.get2DContext('someCanvas');
 
         troyblank.util.canvas.clear(context);
-        assert.equal(context.canvas != undefined, true);
+        assert.notEqual(context.canvas, undefined);
     });
 });

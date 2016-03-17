@@ -1,4 +1,12 @@
 module.exports = {
+    frontend: {
+        src: ['frontend/troyblank/**/*.js', '!frontend/troyblank/util/*.js', '!frontend/troyblank/control/*.js'],
+        directives: {
+            browser: true,
+            regexp: true,
+            predef: ['troyblank']
+        }
+    },
     frontend_util: {
         src: ['frontend/troyblank/util/*.js'],
         directives: {
@@ -18,7 +26,7 @@ module.exports = {
         }
     },
     frontend_test: {
-        src: ['frontend/test/*.js', '!frontend/test/control/*.js'],
+        src: ['frontend/test/**/*.js', '!frontend/test/control/*.js'],
         directives: {
             browser: true,
             predef: ['afterEach',
