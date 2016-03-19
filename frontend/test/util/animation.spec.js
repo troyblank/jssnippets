@@ -9,6 +9,25 @@ describe('util - Animation', function () {
         {x: 98, y: 590}
     ];
 
+    it('should be able to localize a point of a dom element', function () {
+        var mouseEvent = {
+            clientX: 44,
+            clientY: 57
+        },
+            element = {
+                offsetTop: 29,
+                offsetLeft: 30,
+                clientTop: 23,
+                clientLeft: 12,
+                scrollTop: 0,
+                scrollLeft: 0
+            },
+            pos = troyblank.util.animation.localizeMousePoint(mouseEvent, element);
+
+        assert.equal(pos.x, 2);
+        assert.equal(pos.y, 5);
+    });
+
     it('should be able get the distance of a vertice', function () {
         var dist = troyblank.util.animation.getVerticeDist({x: 0, y: 300}, {x: 234, y: 567});
 
